@@ -1,4 +1,10 @@
 
+/lab1/dist
+/lab1/node_modules
+
+/lab2/dist
+/lab2/node_modules
+
 /lab3-Weather/dist
 /lab3-Weather/node_modules
 

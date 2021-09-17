@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Drumkit</title>
 </head>
 <body>
     <audio src="sounds/kick.wav" data-sound="kick"></audio>
     <audio src="sounds/clap.wav" data-sound="clap"></audio>
-    <button id="playChannel1">Play channel 1</button>
+    <audio src="sounds/boom.wav" data-sound="boom"></audio>
+    <audio src="sounds/hihat.wav" data-sound="hihat"></audio>
+    <audio src="sounds/ride.wav" data-sound="ride"></audio>
+    <audio src="sounds/openhat.wav" data-sound="openhat"></audio>
+    <audio src="sounds/snare.wav" data-sound="snare"></audio>
+    <audio src="sounds/tink.wav" data-sound="tink"></audio>
+    <audio src="sounds/tom.wav" data-sound="tom"></audio>
+    <div class="intBtnDiv">
+    <button id="a" class="insBtn">kick</button>
+    <button id="s" class="insBtn">clap</button>
+    <button id="d" class="insBtn">boom</button>
+    <button id="f" class="insBtn">hihat</button>
+    <button id="g" class="insBtn">ride</button>
+    <button id="h" class="insBtn">openhat</button>
+    <button id="j" class="insBtn">snare</button>
+    <button id="k" class="insBtn">tink</button>
+    <button id="l" class="insBtn">tom</button>
+    </div>
+    <div class="recBtnDiv"></div>
+    <button id="recordChannel1" class="recBtn">Start recording 1</button>
+    <button id="recordChannel2" class="recBtn">Start recording 2</button>
+    <button id="recordChannel3" class="recBtn">Start recording 3</button>
+    <button id="recordChannel4" class="recBtn">Start recording 4</button>
+    </div>
+    <div class="playBtnDiv">
+    <button id="playChannel1" class="playBtn">Play channel 1</button>
+    <button id="playChannel2" class="playBtn">Play channel 2</button>
+    <button id="playChannel3" class="playBtn">Play channel 3</button>
+    <button id="playChannel4" class="playBtn">Play channel 4</button>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>

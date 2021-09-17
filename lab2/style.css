@@ -1,0 +1,23 @@
+body {
+    background-color: purple;
+}
+button {
+    
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+.insBtn {
+    background-color: green; 
+}
+.recBtn {
+    background-color: red; 
+}
+.playBtn {
+    background-color: blue; 
+}

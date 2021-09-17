@@ -17,9 +17,10 @@ import {  weather } from './city';
     }
     async getWeather(city: string): Promise<weather> {
         const owApiKey ="abad90316dd90eb567d35ef0308c8703";
-        const openWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${owApiKey}`;
+        const openWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${owApiKey}`;
         const weatherResponse = await fetch(openWeatherUrl);
         const weatherData = await weatherResponse.json();
+
         return weatherData;
     }
     saveData(data: any) {
@@ -54,7 +55,7 @@ import {  weather } from './city';
 
         let tempDiv: HTMLDivElement = document.createElement("div"); //Temp
         tempDiv.className = "tempDiv";
-        tempDiv.innerHTML = City.main.temp + "°C"
+        tempDiv.innerHTML = City.main.temp_min + "°C"
         tempDiv.style.backgroundImage = `url(http://openweathermap.org/img/wn/${City.weather[0].icon}@2x.png)`;
         tempDiv.style.backgroundRepeat = "no-repeat";
         tempDiv.style.backgroundSize = "auto";
